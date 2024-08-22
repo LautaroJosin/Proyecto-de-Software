@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "_main"
+version = "0.1.0"
+description = "Una aplicación de ejemplo con Flask"
+authors = ["Tu Nombre <tu.email@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12.3"
+flask = "^2.3.0"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
