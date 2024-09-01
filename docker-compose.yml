@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  flask_app:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    image: flask-image
+    container_name: backend-flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/app
+    environment: 
+      - FLASK_ENV=development
+
+volumes:
+  flask_app_data:
